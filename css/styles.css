@@ -173,16 +173,16 @@ footer {
 
 .social li {
     display: inline-block;
-    font-size: 1em;
+    font-size: 2em;
     list-style: none;
     margin-right: 20px;
 }
 
 .social a {
     display: block;
-    color: #74808a;
+    color: #000001;
     padding: 2px;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .social a:hover {
@@ -325,35 +325,35 @@ footer {
 }
 
 /* Social Media Icons */
-.social {
+.social-lead {
     margin-top: 0px;
     text-align: center;
 }
 
-.social ul {
+.social-lead ul {
     margin: 5px 0 0 0;
     padding: 0;
 }
 
-.social li {
+.social-lead li {
     display: inline-block;
     /* text-align: center; */
-    font-size: 2em; /* Adjust size as needed */
+    font-size: 3em; /* Adjust size as needed */
     list-style: none;
     margin-right: 25px; /* Adjust margin for spacing */
 }
 
-.social li:last-child {
+.social-lead li:last-child {
     margin-right: 0;
 }
 
-.social a {
+.social-lead a {
     display: block;
     color: #f9f7f7;
     padding: 5px; /* Adjust padding if needed */
 }
 
-.social a:hover {
+.social-lead a:hover {
     color: #3498db;
 }
 
@@ -598,11 +598,16 @@ footer {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid #dcd9d9;
     text-align: center;
+    /* background: url('../images/sky.jpg');
+    background-size: cover; */
+    background: #f2f2f2;
 }
 
 #education h2 {
     color: #374054;
     margin-bottom: 50px;
+    font-size: 3em;
+    font-weight: bold;
 }
 
 
@@ -618,17 +623,21 @@ footer {
 .education-block-content {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     flex: 1;
-    text-align: right;
+    text-align: center;
 }
 
 .school-logo {
-    /* width: 5px;
-    height: 5px; */
     margin-right: 20px; 
     border-radius: 5px;
     align-self: left;
+}
+
+.school-logo img {
+    width: 120px; /* Adjust width as needed */
+    height: 120px; /* Adjust height as needed */
+    object-fit: contain; /* Ensures the image maintains its aspect ratio */
+    border-radius: 5px;
 }
 
 .education-block h3 {
@@ -672,6 +681,8 @@ footer {
 #skills h2 {
     color: #374054;
     margin-bottom: 50px;
+    font-size: 3em;
+    font-weight: bold;
 }
 
 #skills ul {
