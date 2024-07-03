@@ -189,9 +189,11 @@ footer {
 /* Button Styles */
 .btn-rounded-white {
     display: inline-block;
-    color: #fff;
+    color: #0f0f0f;
+    font-weight: bold;
     padding: 15px 25px;
-    border: 3px solid #fff;
+    /* border: 3px solid #040404; */
+    background-color: #f4e3e3;
     border-radius: 30px;
     transition: .5s ease all;
 }
@@ -266,16 +268,16 @@ footer {
 #lead-content h1 {
     color: #fff;
     font-weight: 900;
-    font-size: 5em;
+    font-size: 10em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     line-height: 0.9em;
 }
 
 #lead-content h2 {
-    color: #a0cfee;
+    color: #030405;
     font-weight: 500;
-    font-size: 2.25em;
+    font-size: 3em;
     margin-bottom: 15px;
 }
 
@@ -341,6 +343,8 @@ footer {
 
 #about h2 {
     color: #374054;
+    font-weight: bold;
+    font-size: 2.5em;
 }
 
 #about p {
@@ -348,19 +352,112 @@ footer {
     margin: 0;
 }
 
+/* Projects Section */
+#projects {
+    padding: 50px 15px;
+    border-bottom: 1px solid #dcd9d9;
+    background: url('../images/brick_wall.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+}
+
+#projects h2 {
+    color: #010101;
+    margin-bottom: 50px;
+    font-size: 3em;
+    font-weight: bold;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    background-color: #fbfafa; /* Replace with your desired background color */
+    display: inline-block;
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 7px; /* Optional: add border-radius for rounded corners */
+}
+
+
+.project {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    background: #f2f2f2;
+    border-radius: 4px;
+}
+
+.project-image {
+    float: left;
+    width: 3px;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 300px;
+    padding: 15px;
+}
+
+/* .project-info {
+    margin-left: 320px; /* Adjust margin to create space between image and text */
+    /* padding: 15px;
+} */
+
+.project-info h3 {
+    font-size: 1.5em;
+    font-weight: 300;
+    color: #374054;
+    margin: 0 0 15px 0;
+}
+
+.project-info p {
+    color: #74808a;
+    margin: 0 0 15px 0;
+    font-size: 0.9em;
+}
+
+/* .no-image .project-info {
+    position: relative;
+    margin: 0;
+    padding: 30px 15px;
+    transform: none;
+} */
+
+@media only screen and (max-width: 768px) {
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* .project-image {
+        float: none;
+        width: 100%; /* Full width on smaller screens */
+       /* max-width: 100%; /* Ensure responsiveness */
+       /* margin-bottom: 15px; /* Space between image and info on smaller screens */
+    /*} */
+    
+    .project-info {
+        margin-left: 0; /* Reset margin for smaller screens */
+        text-align: center; /* Center align text on smaller screens */
+    }
+}
+
+
 /* Experience Section */
 #experience {
     padding: 50px 15px;
     text-align: center;
     border-bottom: 1px solid #dcd9d9;
-    background: url('../images/artS.jpg') no-repeat center center;
+    background: url('../images/clouds.jpg');
     background-size: cover;
 }
 
 #experience h2 {
-    color: #f6f8fb;
+    color: #f7f6f6;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 3em;
 }
 
 #experience-timeline {
@@ -454,10 +551,12 @@ footer {
     position: absolute;
     left: 0;
     top: 10px;
-    font-weight: 3000;
+    font-weight: 30000;
     color: #000308;
+    font-size: 1.3em;
 }
 
+/* Education Section */
 /* Education Section */
 #education {
     padding: 50px 15px 20px 15px;
@@ -470,7 +569,9 @@ footer {
     margin-bottom: 50px;
 }
 
+
 .education-block {
+    display: flex;
     max-width: 700px;
     margin: 0 auto 30px auto;
     padding: 15px;
@@ -478,9 +579,24 @@ footer {
     text-align: left;
 }
 
+.education-block-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    flex: 1;
+    text-align: right;
+}
+
+.school-logo {
+    /* width: 5px;
+    height: 5px; */
+    margin-right: 20px; 
+    border-radius: 5px;
+    align-self: left;
+}
+
 .education-block h3 {
     font-weight: 500;
-    float: left;
     margin: 0;
     color: #374054;
 }
@@ -488,13 +604,13 @@ footer {
 .education-block span {
     color: #74808a;
     float: right;
+    margin: 0;
 }
 
 .education-block h4 {
     color: #74808a;
-    clear: both;
     font-weight: 500;
-    margin: 0 0 15px 0;
+    margin: 0;
 }
 
 .education-block p,
@@ -508,58 +624,7 @@ footer {
     padding: 0 0 0 15px;
 }
 
-/* Projects Section */
-#projects {
-    padding: 50px 15px;
-    border-bottom: 1px solid #dcd9d9;
-    text-align: center;
-}
 
-#projects h2 {
-    color: #374054;
-    margin-bottom: 50px;
-}
-
-.project {
-    position: relative;
-    max-width: 900px;
-    margin: 0 auto 30px auto;
-    overflow: hidden;
-    background: #fff;
-    border-radius: 4px;
-}
-
-.project-image {
-    float: left;
-}
-
-.project-info {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 300px;
-    padding: 15px;
-}
-
-.project-info h3 {
-    font-size: 1.5em;
-    font-weight: 300;
-    color: #374054;
-    margin: 0 0 15px 0;
-}
-
-.project-info p {
-    color: #74808a;
-    margin: 0 0 15px 0;
-    font-size: 0.9em;
-}
-
-.no-image .project-info {
-    position: relative;
-    margin: 0;
-    padding: 30px 15px;
-    transform: none;
-}
 
 /* Skills Section */
 #skills {
@@ -593,7 +658,9 @@ footer {
 /* Contact Section */
 #contact {
     padding: 50px 15px;
-    background: #3498db;
+    /* background: #060606; */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)) 50% 0 / auto, url('../images/question.JPG') no-repeat left;
+    background-size: auto, contain;
     text-align: center;
 }
 
@@ -616,7 +683,7 @@ footer {
     border-radius: 4px;
     border: none;
     margin-bottom: 10px;
-    background: #1d6fa5;
+    background: #f5f6f6;
     color: #fff;
     transition: .5s ease all;
 }
@@ -657,11 +724,11 @@ footer {
 #contact-form button {
     display: block;
     width: 100%;
-    background: #fff;
+    background: #eae3e3;
     border-radius: 4px;
     padding: 5px 10px;
     border: none;
-    color: #3498db;
+    color: #010b11;
     font-weight: 700;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: .5s ease all;
