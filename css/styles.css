@@ -128,11 +128,12 @@ header.sticky {
 
 /* Footer Styles */
 footer {
-    padding: 50px 0;
+    padding: 5px 0;
+    background: #f2f2f2;
 }
 
 .copyright {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .copyright p {
@@ -166,20 +167,22 @@ footer {
 }
 
 .social ul {
-    margin: 5px 0 0 0;
+    margin: 0px 0 0 0;
     padding: 0;
 }
 
 .social li {
     display: inline-block;
-    font-size: 1.25em;
+    font-size: 1em;
     list-style: none;
+    margin-right: 20px;
 }
 
 .social a {
     display: block;
     color: #74808a;
-    padding: 10px;
+    padding: 2px;
+    font-size: 2em;
 }
 
 .social a:hover {
@@ -319,6 +322,39 @@ footer {
     animation: pulsate 1.5s ease;
     animation-iteration-count: infinite;
     padding-top: 5px;
+}
+
+/* Social Media Icons */
+.social {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.social ul {
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+.social li {
+    display: inline-block;
+    /* text-align: center; */
+    font-size: 2em; /* Adjust size as needed */
+    list-style: none;
+    margin-right: 25px; /* Adjust margin for spacing */
+}
+
+.social li:last-child {
+    margin-right: 0;
+}
+
+.social a {
+    display: block;
+    color: #f9f7f7;
+    padding: 5px; /* Adjust padding if needed */
+}
+
+.social a:hover {
+    color: #3498db;
 }
 
 @keyframes pulsate {
@@ -630,6 +666,7 @@ footer {
 #skills {
     padding: 50px 15px;
     text-align: center;
+    background: #f2f2f2;
 }
 
 #skills h2 {
@@ -723,7 +760,8 @@ footer {
 #contact-form input:focus,
 #contact-form textarea:focus {
     outline: none;
-    background: #fb0b1f;
+    /* background: #dedddd; */
+    background: #fdf3f3;
 }
 
 #contact-form textarea {
@@ -753,6 +791,7 @@ footer {
     padding: 50px 15px;
     text-align: center;
     border-top: 1px solid #dcd9d9;
+    background: #f2f2f2;
 }
 
 .optional-section h2 {
