@@ -658,8 +658,8 @@ footer {
 /* Contact Section */
 #contact {
     padding: 50px 15px;
-    /* background: #060606; */
-    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)) 50% 0 / auto, url('../images/question.JPG') no-repeat left;
+    background: #060606;
+    /* background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)) 50% 0 / auto, url('../images/question.JPG') no-repeat left; */
     background-size: auto, contain;
     text-align: center;
 }
@@ -668,11 +668,21 @@ footer {
     margin: 0 0 15px 0;
     color: #fff;
     font-weight: 500;
+    font-size: 3em;
 }
 
 #contact-form {
     max-width: 500px;
     margin: 0 auto;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fbf8f8;
+    font-weight: 5000;
+    font-size: 1em;
+    text-align: left;
 }
 
 #contact-form input,
@@ -684,18 +694,18 @@ footer {
     border: none;
     margin-bottom: 10px;
     background: #f5f6f6;
-    color: #fff;
+    color: #060000;
     transition: .5s ease all;
 }
 
 #contact-form input::-webkit-input-placeholder,
 #contact-form textarea::-webkit-input-placeholder {
-    color: #fff;
+    color: #080000;
 }
 
 #contact-form input:-moz-placeholder,
 #contact-form textarea:-moz-placeholder {
-    color: #fff;
+    color: #070000;
     opacity: 1;
 }
 
@@ -713,7 +723,7 @@ footer {
 #contact-form input:focus,
 #contact-form textarea:focus {
     outline: none;
-    background: #16527a;
+    background: #fb0b1f;
 }
 
 #contact-form textarea {
