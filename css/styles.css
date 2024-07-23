@@ -383,9 +383,22 @@ footer {
     font-size: 2.5em;
 }
 
-#about p {
+/* #about p {
     color: #74808a;
     margin: 0;
+} */
+
+#about .col-md-8 ul {
+    text-align: left;
+    list-style-position: inside;
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+}
+
+#about .col-md-8 ul li {
+    margin: 0;
+    padding: 0;
 }
 
 /* Projects Section */
@@ -421,9 +434,15 @@ footer {
 
 .project-image {
     float: left;
-    width: 3px;
-    height: auto;
-    object-fit: cover;
+    width: 20px;
+    height: 240px;
+    object-fit: contain;
+
+
+    /* width: 2px; /* Adjust width as needed */
+    /* height: 120px; /* Adjust height as needed */
+    /* object-fit: contain; /* Ensures the image maintains its aspect ratio */
+    /* border-radius: 5px;  */
 }
 
 .project-info {
@@ -440,14 +459,14 @@ footer {
 } */
 
 .project-info h3 {
-    font-size: 1.5em;
-    font-weight: 300;
-    color: #374054;
+    font-size: 2em;
+    font-weight: 400;
+    color: #060606;
     margin: 0 0 15px 0;
 }
 
 .project-info p {
-    color: #74808a;
+    color: #0d0e0e;
     margin: 0 0 15px 0;
     font-size: 0.9em;
 }
@@ -598,7 +617,7 @@ footer {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid #dcd9d9;
     text-align: center;
-    /* background: url('../images/sky.jpg');
+    /* background: url('../images/cld2.jpg');
     background-size: cover; */
     background: #f2f2f2;
 }
@@ -616,7 +635,7 @@ footer {
     max-width: 700px;
     margin: 0 auto 30px auto;
     padding: 15px;
-    border: 1px solid #dcd9d9;
+    border: 1px solid #0b0a0a;
     text-align: left;
 }
 
